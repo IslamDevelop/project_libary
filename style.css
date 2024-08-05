@@ -72,6 +72,17 @@ body {
     color: white;
     gap: 5px;
     position: relative;
+    background-color: saddlebrown;
+        opacity: 87%;
+}
+
+#addBookForm button {
+    width: 158px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(53, 39, 12);
+    color: white;
+    font-weight: bold;
 }
 input {
     border-radius: 15px;
@@ -119,7 +130,9 @@ input {
     background-color: navajowhite;
     font-size: 16px;
     font-weight: bold;
+    color: black;
 }
+
 .card {
     width: 148px;
     box-shadow: 6px 5px 11px black;
@@ -162,6 +175,7 @@ h4,h5,h3 {
 
 
 @media (max-width:430px) {
+    
     .main {
         width: 350px;
         height: 350px;
@@ -200,5 +214,13 @@ h4,h5,h3 {
     .menu {
         left: 94px;
     top: -45px;
+    }
+    #addBookForm {
+        background-color: saddlebrown;
+        opacity: 87%;
+        left: 21px;
+        top: 131px;
+        width: 272px;
+        height: 291px;
     }
 }

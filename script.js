@@ -50,7 +50,7 @@ function createCard() {
     
         const titleCard = document.createElement('h3')
         const countCard = document.createElement('h4')
-        titleCard.textContent = `Название \n${element.title}` 
+        titleCard.textContent = `Название: \n${element.title}` 
         countCard.textContent = `Страниц: \n${element.count}`;
         const deleteButton = document.createElement('button')
         deleteButton.textContent = "Удалить"
