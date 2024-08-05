@@ -9,12 +9,34 @@
 <body>
     <div class="main">
         <div class="doors">
+            <div class="books">
+                <div class="book"></div>
+            </div>
+            <button class="addBook">Добавить книгу</button>
+            <div class="bookCard">
+                
+            </div>
             <div class="leftDoor"></div>
             <div class="rightDoor"></div>
+
+
         </div>
+     
         <div class="menu">
             <button class="open">Открыть</button>
+            <button class="close">Закрыть</button>
         </div>
+
+        <form id="addBookForm" onsubmit="return false">
+            <span class="closeForm">x</span>
+            <label for="bookTitle">Название</label>
+            <input type="text" id="bookTitle" name="bookTitle" required>
+            <label for="bookCount">Количество страниц</label>
+            <input type="number" id="bookCount" name="bookCount" required>
+            <label for="read">Прочитано?</label>
+            <input type="checkbox" id="read">
+            <button type="onsubmit" class="adder">Добавить</button>
+        </form>
     </div>
 
     <script src="script.js"></script>

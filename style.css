@@ -34,6 +34,18 @@ body {
     top: 38px;
     transition: 1s;
 }
+.menu {
+    position: absolute;
+    left: 199px;
+    top: -39px;
+}
+.menu button {
+    width: 158px;
+    border-radius: 3px;
+    background-color: rgb(80, 60, 24);
+    color: white;
+    font-weight: bold;
+}
 .rightDoor_open {
     transform: perspective(1500px) rotateY(85deg);
     transform-origin: right;
@@ -41,4 +53,152 @@ body {
 .leftDoor_open {
     transform: perspective(1500px) rotateY(-85deg);
     transform-origin: left;
+}
+
+#addBookForm {
+    display: none;
+    flex-direction: column;
+    width: 553px;
+    height: 266px;
+    backdrop-filter: blur(4px);
+    box-shadow: -1px 2px 18px black;
+    border-radius: 15px;
+    position: absolute;
+    left: 68px;
+    top: 238px;
+    padding: 9px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    position: relative;
+}
+input {
+    border-radius: 15px;
+    background-color: rgb(128, 76, 34);
+    color: white;
+}
+.closeForm {
+    background: none;
+    border: none;
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    right: 14px;
+    top: 4px;
+}
+.bookCard{
+        position: absolute;
+        left: 111px;
+        top: 82px;
+        width: 469px;
+        background-color:#b37e40;
+        height: 563px;
+        display: flex;
+        padding: 5px;
+        gap: 10px;
+        flex-wrap: wrap;
+    align-content: flex-start;
+}
+.card button {
+    background-color: #b1a21b;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+   padding: 5px;
+}
+.addBook {
+    position: absolute;
+    left: 111px;
+    top: 47px;
+    width: 477px;
+    height: 33px;
+    border-radius: 6px;
+    border: none;
+    background-color: navajowhite;
+    font-size: 16px;
+    font-weight: bold;
+}
+.card {
+    width: 148px;
+    box-shadow: 6px 5px 11px black;
+display: flex;
+flex-direction: column;
+align-items: center;
+    background: linear-gradient(rgba(41, 33, 3, 0.979),rgba(109, 60, 14, 0.925));
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    height: 181px;
+    border-radius: 7px;
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+h3 {
+    width: 100px;
+}
+h5 {
+    background-color: red;
+    margin: 0px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+h4,h5,h3 {
+    margin: 0px;
+}
+.card h4{
+    display: none;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    
+    h4 {
+        display: block;
+    }
+}
+
+
+@media (max-width:430px) {
+    .main {
+        width: 350px;
+        height: 350px;
+    }
+
+    .leftDoor {
+        height: 286px;
+        width: 134px;
+        left: 37px;
+        top: 23px;
+    }
+    .rightDoor {
+        height: 286px;
+        width: 134px;
+        left: 159px;
+        top: 23px;
+    }
+    .bookCard {
+        left: 50px;
+        top: 53px;
+        width: 219px;
+        height: 245px;
+    overflow: scroll;
+    justify-content: center;
+    }
+    .addBook{
+        left: 51px;
+    top: 21px;
+    width: 226px;
+    height: 30px;
+    }
+    body {
+        height: 100%;
+        margin-top: 48px;
+    }
+    .menu {
+        left: 94px;
+    top: -45px;
+    }
 }
