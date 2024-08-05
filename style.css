@@ -223,4 +223,7 @@ h4,h5,h3 {
         width: 272px;
         height: 291px;
     }
+    .card h4{
+        display: block;
+    }
 }
